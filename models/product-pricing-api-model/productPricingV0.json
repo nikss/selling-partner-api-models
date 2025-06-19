@@ -158,7 +158,7 @@
               },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             },
             "x-amzn-api-sandbox": {
@@ -507,7 +507,7 @@
               },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             },
             "x-amzn-api-sandbox": {
@@ -538,13 +538,9 @@
               "$ref": "#/definitions/GetPricingResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "type": "string",
-                "description": "Your rate limit (requests per second) for this operation.\n_Note:_ For this status code, the rate limit header is deprecated and no longer returned."
-              },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           },
@@ -556,7 +552,7 @@
             "headers": {
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           },
@@ -572,7 +568,7 @@
               },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           },
@@ -582,13 +578,9 @@
               "$ref": "#/definitions/GetPricingResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "type": "string",
-                "description": "Your rate limit (requests per second) for this operation.\n_Note:_ For this status code, the rate limit header is deprecated and no longer returned."
-              },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           },
@@ -598,13 +590,9 @@
               "$ref": "#/definitions/GetPricingResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "type": "string",
-                "description": "Your rate limit (requests per second) for this operation.\n_Note:_ For this status code, the rate limit header is deprecated and no longer returned."
-              },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           },
@@ -614,13 +602,9 @@
               "$ref": "#/definitions/GetPricingResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "type": "string",
-                "description": "Your rate limit (requests per second) for this operation.\n_Note:_ For this status code, the rate limit header is deprecated and no longer returned."
-              },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           }
@@ -720,7 +704,7 @@
               },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             },
             "x-amzn-api-sandbox": {
@@ -1017,214 +1001,6 @@
                       },
                       "ItemType": {
                         "value": "Asin"
-                      }
-                    }
-                  },
-                  "response": {
-                    "payload": [
-                      {
-                        "status": "Success",
-                        "ASIN": "B00V5DG6IQ",
-                        "Product": {
-                          "Identifiers": {
-                            "MarketplaceASIN": {
-                              "MarketplaceId": "ATVPDKIKX0DER",
-                              "ASIN": "B00V5DG6IQ"
-                            },
-                            "SKUIdentifier": {
-                              "MarketplaceId": "",
-                              "SellerId": "",
-                              "SellerSKU": ""
-                            }
-                          },
-                          "CompetitivePricing": {
-                            "CompetitivePrices": [],
-                            "NumberOfOfferListings": [
-                              {
-                                "Count": 1,
-                                "condition": "New"
-                              },
-                              {
-                                "Count": 1,
-                                "condition": "Any"
-                              }
-                            ]
-                          },
-                          "SalesRankings": [
-                            {
-                              "ProductCategoryId": "office_product_display_on_website",
-                              "Rank": 19
-                            },
-                            {
-                              "ProductCategoryId": "1069616",
-                              "Rank": 1
-                            },
-                            {
-                              "ProductCategoryId": "705333011",
-                              "Rank": 1
-                            },
-                            {
-                              "ProductCategoryId": "1069242",
-                              "Rank": 17
-                            }
-                          ]
-                        }
-                      },
-                      {
-                        "status": "Success",
-                        "ASIN": "B00551Q3CS",
-                        "Product": {
-                          "Identifiers": {
-                            "MarketplaceASIN": {
-                              "MarketplaceId": "ATVPDKIKX0DER",
-                              "ASIN": "B00551Q3CS"
-                            },
-                            "SKUIdentifier": {
-                              "MarketplaceId": "",
-                              "SellerId": "",
-                              "SellerSKU": ""
-                            }
-                          },
-                          "CompetitivePricing": {
-                            "CompetitivePrices": [],
-                            "NumberOfOfferListings": [
-                              {
-                                "Count": 1,
-                                "condition": "New"
-                              },
-                              {
-                                "Count": 1,
-                                "condition": "Any"
-                              }
-                            ]
-                          },
-                          "SalesRankings": [
-                            {
-                              "ProductCategoryId": "464394",
-                              "Rank": 224
-                            },
-                            {
-                              "ProductCategoryId": "12954861",
-                              "Rank": 1057
-                            }
-                          ]
-                        }
-                      }
-                    ]
-                  }
-                },
-                {
-                  "request": {
-                    "parameters": {
-                      "MarketplaceId": {
-                        "value": "ATVPDKIKX0DER"
-                      },
-                      "ItemType": {
-                        "value": "Sku"
-                      }
-                    }
-                  },
-                  "response": {
-                    "payload": [
-                      {
-                        "status": "Success",
-                        "SellerSKU": "NABetaASINB00V5DG6IQ",
-                        "Product": {
-                          "Identifiers": {
-                            "MarketplaceASIN": {
-                              "MarketplaceId": "ATVPDKIKX0DER",
-                              "ASIN": "B00V5DG6IQ"
-                            },
-                            "SKUIdentifier": {
-                              "MarketplaceId": "ATVPDKIKX0DER",
-                              "SellerId": "AXXXXXXXXXXXXX",
-                              "SellerSKU": "NABetaASINB00V5DG6IQ"
-                            }
-                          },
-                          "CompetitivePricing": {
-                            "CompetitivePrices": [],
-                            "NumberOfOfferListings": [
-                              {
-                                "Count": 1,
-                                "condition": "New"
-                              },
-                              {
-                                "Count": 1,
-                                "condition": "Any"
-                              }
-                            ]
-                          },
-                          "SalesRankings": [
-                            {
-                              "ProductCategoryId": "office_product_display_on_website",
-                              "Rank": 19
-                            },
-                            {
-                              "ProductCategoryId": "1069616",
-                              "Rank": 1
-                            },
-                            {
-                              "ProductCategoryId": "705333011",
-                              "Rank": 1
-                            },
-                            {
-                              "ProductCategoryId": "1069242",
-                              "Rank": 17
-                            }
-                          ]
-                        }
-                      },
-                      {
-                        "status": "Success",
-                        "SellerSKU": "NABetaASINB00551Q3CS",
-                        "Product": {
-                          "Identifiers": {
-                            "MarketplaceASIN": {
-                              "MarketplaceId": "ATVPDKIKX0DER",
-                              "ASIN": "B00551Q3CS"
-                            },
-                            "SKUIdentifier": {
-                              "MarketplaceId": "ATVPDKIKX0DER",
-                              "SellerId": "AXXXXXXXXXXXXX",
-                              "SellerSKU": "NABetaASINB00551Q3CS"
-                            }
-                          },
-                          "CompetitivePricing": {
-                            "CompetitivePrices": [],
-                            "NumberOfOfferListings": [
-                              {
-                                "Count": 1,
-                                "condition": "New"
-                              },
-                              {
-                                "Count": 1,
-                                "condition": "Any"
-                              }
-                            ]
-                          },
-                          "SalesRankings": [
-                            {
-                              "ProductCategoryId": "464394",
-                              "Rank": 224
-                            },
-                            {
-                              "ProductCategoryId": "12954861",
-                              "Rank": 1057
-                            }
-                          ]
-                        }
-                      }
-                    ]
-                  }
-                },
-                {
-                  "request": {
-                    "parameters": {
-                      "MarketplaceId": {
-                        "value": "ATVPDKIKX0DER"
-                      },
-                      "ItemType": {
-                        "value": "Asin"
                       },
                       "CustomerType": {
                         "value": "Business"
@@ -1411,7 +1187,7 @@
               },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             },
             "x-amzn-api-sandbox": {
@@ -1442,13 +1218,9 @@
               "$ref": "#/definitions/GetPricingResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "type": "string",
-                "description": "Your rate limit (requests per second) for this operation.\n_Note:_ For this status code, the rate limit header is deprecated and no longer returned."
-              },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           },
@@ -1460,7 +1232,7 @@
             "headers": {
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           },
@@ -1476,7 +1248,7 @@
               },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           },
@@ -1486,13 +1258,9 @@
               "$ref": "#/definitions/GetPricingResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "type": "string",
-                "description": "Your rate limit (requests per second) for this operation.\n_Note:_ For this status code, the rate limit header is deprecated and no longer returned."
-              },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           },
@@ -1502,13 +1270,9 @@
               "$ref": "#/definitions/GetPricingResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "type": "string",
-                "description": "Your rate limit (requests per second) for this operation.\n_Note:_ For this status code, the rate limit header is deprecated and no longer returned."
-              },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           },
@@ -1518,13 +1282,9 @@
               "$ref": "#/definitions/GetPricingResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "type": "string",
-                "description": "Your rate limit (requests per second) for this operation.\n_Note:_ For this status code, the rate limit header is deprecated and no longer returned."
-              },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           }
@@ -1629,7 +1389,7 @@
               },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             },
             "x-amzn-api-sandbox": {
@@ -1910,7 +1670,7 @@
               },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             },
             "x-amzn-api-sandbox": {
@@ -1941,13 +1701,9 @@
               "$ref": "#/definitions/GetOffersResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "type": "string",
-                "description": "Your rate limit (requests per second) for this operation.\n_Note:_ For this status code, the rate limit header is deprecated and no longer returned."
-              },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           },
@@ -1959,7 +1715,7 @@
             "headers": {
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           },
@@ -1975,7 +1731,7 @@
               },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           },
@@ -1985,13 +1741,9 @@
               "$ref": "#/definitions/GetOffersResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "type": "string",
-                "description": "Your rate limit (requests per second) for this operation.\n_Note:_ For this status code, the rate limit header is deprecated and no longer returned."
-              },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           },
@@ -2001,13 +1753,9 @@
               "$ref": "#/definitions/GetOffersResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "type": "string",
-                "description": "Your rate limit (requests per second) for this operation.\n_Note:_ For this status code, the rate limit header is deprecated and no longer returned."
-              },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           },
@@ -2017,13 +1765,9 @@
               "$ref": "#/definitions/GetOffersResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "type": "string",
-                "description": "Your rate limit (requests per second) for this operation.\n_Note:_ For this status code, the rate limit header is deprecated and no longer returned."
-              },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           }
@@ -2128,7 +1872,7 @@
               },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             },
             "x-amzn-api-sandbox": {
@@ -2408,7 +2152,7 @@
               },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             },
             "x-amzn-api-sandbox": {
@@ -2439,13 +2183,9 @@
               "$ref": "#/definitions/GetOffersResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "type": "string",
-                "description": "Your rate limit (requests per second) for this operation.\n_Note:_ For this status code, the rate limit header is deprecated and no longer returned."
-              },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           },
@@ -2457,7 +2197,7 @@
             "headers": {
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           },
@@ -2473,7 +2213,7 @@
               },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           },
@@ -2483,13 +2223,9 @@
               "$ref": "#/definitions/GetOffersResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "type": "string",
-                "description": "Your rate limit (requests per second) for this operation.\n_Note:_ For this status code, the rate limit header is deprecated and no longer returned."
-              },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           },
@@ -2499,13 +2235,9 @@
               "$ref": "#/definitions/GetOffersResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "type": "string",
-                "description": "Your rate limit (requests per second) for this operation.\n_Note:_ For this status code, the rate limit header is deprecated and no longer returned."
-              },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           },
@@ -2515,13 +2247,9 @@
               "$ref": "#/definitions/GetOffersResponse"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "type": "string",
-                "description": "Your rate limit (requests per second) for this operation.\n_Note:_ For this status code, the rate limit header is deprecated and no longer returned."
-              },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           }
@@ -2539,6 +2267,7 @@
           {
             "name": "getItemOffersBatchRequestBody",
             "in": "body",
+            "description": "The request associated with the `getItemOffersBatch` API call.",
             "required": true,
             "schema": {
               "$ref": "#/definitions/GetItemOffersBatchRequest"
@@ -2631,7 +2360,7 @@
                       }
                     }
                   },
-                  "response" : {
+                  "response": {
                     "responses": [
                       {
                         "status": {
@@ -4826,7 +4555,7 @@
               },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           },
@@ -4842,7 +4571,7 @@
               },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             },
             "x-amzn-api-sandbox": {
@@ -4883,13 +4612,9 @@
               "$ref": "#/definitions/Errors"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "type": "string",
-                "description": "Your rate limit (requests per second) for this operation.\n_Note:_ For this status code, the rate limit header is deprecated and no longer returned."
-              },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           },
@@ -4901,7 +4626,7 @@
             "headers": {
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           },
@@ -4917,7 +4642,7 @@
               },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           },
@@ -4927,13 +4652,9 @@
               "$ref": "#/definitions/Errors"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "type": "string",
-                "description": "Your rate limit (requests per second) for this operation.\n_Note:_ For this status code, the rate limit header is deprecated and no longer returned."
-              },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           },
@@ -4943,13 +4664,9 @@
               "$ref": "#/definitions/Errors"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "type": "string",
-                "description": "Your rate limit (requests per second) for this operation.\n_Note:_ For this status code, the rate limit header is deprecated and no longer returned."
-              },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           },
@@ -4959,13 +4676,9 @@
               "$ref": "#/definitions/Errors"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "type": "string",
-                "description": "Your rate limit (requests per second) for this operation.\n_Note:_ For this status code, the rate limit header is deprecated and no longer returned."
-              },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           }
@@ -4983,6 +4696,7 @@
           {
             "name": "getListingOffersBatchRequestBody",
             "in": "body",
+            "description": "The request associated with the `getListingOffersBatch` API call.",
             "required": true,
             "schema": {
               "$ref": "#/definitions/GetListingOffersBatchRequest"
@@ -6621,7 +6335,7 @@
               },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           },
@@ -6637,7 +6351,7 @@
               },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             },
             "x-amzn-api-sandbox": {
@@ -6678,13 +6392,9 @@
               "$ref": "#/definitions/Errors"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "type": "string",
-                "description": "Your rate limit (requests per second) for this operation.\n_Note:_ For this status code, the rate limit header is deprecated and no longer returned."
-              },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           },
@@ -6696,7 +6406,7 @@
             "headers": {
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           },
@@ -6712,7 +6422,7 @@
               },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           },
@@ -6722,13 +6432,9 @@
               "$ref": "#/definitions/Errors"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "type": "string",
-                "description": "Your rate limit (requests per second) for this operation.\n_Note:_ For this status code, the rate limit header is deprecated and no longer returned."
-              },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           },
@@ -6738,13 +6444,9 @@
               "$ref": "#/definitions/Errors"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "type": "string",
-                "description": "Your rate limit (requests per second) for this operation.\n_Note:_ For this status code, the rate limit header is deprecated and no longer returned."
-              },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           },
@@ -6754,13 +6456,9 @@
               "$ref": "#/definitions/Errors"
             },
             "headers": {
-              "x-amzn-RateLimit-Limit": {
-                "type": "string",
-                "description": "Your rate limit (requests per second) for this operation.\n_Note:_ For this status code, the rate limit header is deprecated and no longer returned."
-              },
               "x-amzn-RequestId": {
                 "type": "string",
-                "description": "Unique request reference ID."
+                "description": "Unique request reference identifier."
               }
             }
           }
@@ -6823,7 +6521,8 @@
           "description": "Indicates whether to request Consumer or Business offers. Default is Consumer.",
           "$ref": "#/definitions/CustomerType"
         }
-      }
+      },
+      "description": "Common request parameters that can be accepted by `ItemOffersRequest` and `ListingOffersRequest`"
     },
     "ItemOffersRequest": {
       "allOf": [
@@ -6833,7 +6532,8 @@
         {
           "$ref": "#/definitions/BatchOffersRequestParams"
         }
-      ]
+      ],
+      "description": "List of request parameters can be accepted by `ItemOffersRequests` operation"
     },
     "ListingOffersRequest": {
       "allOf": [
@@ -6843,7 +6543,8 @@
         {
           "$ref": "#/definitions/BatchOffersRequestParams"
         }
-      ]
+      ],
+      "description": "List of request parameters that can be accepted by `ListingOffersRequest` operation"
     },
     "GetItemOffersBatchResponse": {
       "description": "The response associated with the `getItemOffersBatch` API call.",
@@ -6896,7 +6597,8 @@
         "body": {
           "$ref": "#/definitions/GetOffersResponse"
         }
-      }
+      },
+      "description": "Common schema that present in `ItemOffersResponse` and `ListingOffersResponse`"
     },
     "ItemOffersRequestParams": {
       "allOf": [
@@ -6912,7 +6614,8 @@
             }
           }
         }
-      ]
+      ],
+      "description": "List of request parameters that can be accepted by `ItemOffersRequest`"
     },
     "ItemOffersResponse": {
       "allOf": [
@@ -6930,7 +6633,8 @@
             }
           }
         }
-      ]
+      ],
+      "description": "Schema for an individual `ItemOffersResponse`"
     },
     "ListingOffersRequestParams": {
       "allOf": [
@@ -6949,7 +6653,8 @@
             }
           }
         }
-      ]
+      ],
+      "description": "List of request parameters that can be accepted by `ListingOffersRequest`"
     },
     "ListingOffersResponse": {
       "allOf": [
@@ -6964,7 +6669,8 @@
             }
           }
         }
-      ]
+      ],
+      "description": "Schema for an individual `ListingOffersResponse`"
     },
     "Errors": {
       "type": "object",
@@ -7012,7 +6718,8 @@
       "items": {
         "$ref": "#/definitions/Price"
       },
-      "maxItems": 20
+      "maxItems": 20,
+      "description": "The payload for the `getPricing` and `getCompetitivePricing` operations."
     },
     "GetOffersResult": {
       "type": "object",
@@ -7057,7 +6764,8 @@
           "description": "A list of offer details. The list is the same length as the TotalOfferCount in the Summary or 20, whichever is less.",
           "$ref": "#/definitions/OfferDetailList"
         }
-      }
+      },
+      "description": "The payload for the getListingOffers and getItemOffers operations."
     },
     "HttpRequestHeaders": {
       "description": "A mapping of additional HTTP headers to send/receive for the individual batch request.",
@@ -7076,7 +6784,7 @@
         },
         "x-amzn-RequestId": {
           "type": "string",
-          "description": "Unique request reference ID."
+          "description": "Unique request reference identifier."
         }
       },
       "additionalProperties": {
@@ -7098,12 +6806,6 @@
           "type": "string"
         }
       }
-    },
-    "HttpUri": {
-      "description": "The URI associated with the individual APIs being called as part of the batch request.",
-      "type": "string",
-      "minLength": 6,
-      "maxLength": 512
     },
     "HttpMethod": {
       "description": "The HTTP method associated with the individual APIs being called as part of the batch request.",
@@ -7179,7 +6881,8 @@
         "Product": {
           "$ref": "#/definitions/Product"
         }
-      }
+      },
+      "description": "Schema for price info in `getPricing` response"
     },
     "Product": {
       "type": "object",
@@ -7240,7 +6943,8 @@
           "type": "string",
           "description": "The Amazon Standard Identification Number (ASIN) of the item."
         }
-      }
+      },
+      "description": "Schema to identify an item by MarketPlaceId and ASIN."
     },
     "SellerSKUIdentifier": {
       "type": "object",
@@ -7262,7 +6966,8 @@
           "type": "string",
           "description": "The seller stock keeping unit (SKU) of the item."
         }
-      }
+      },
+      "description": "Schema to identify an item by MarketPlaceId, SellerId, and SellerSKU."
     },
     "AttributeSetList": {
       "type": "array",
@@ -7349,7 +7054,8 @@
           "type": "boolean",
           "description": " Indicates whether or not the pricing information is for an offer listing that belongs to the requester. The requester is the seller associated with the SellerId that was submitted with the request. Possible values are: true and false."
         }
-      }
+      },
+      "description": "Schema for competitive pricing information"
     },
     "NumberOfOfferListingsList": {
       "type": "array",
@@ -7388,7 +7094,8 @@
           "type": "number",
           "description": "The monetary value."
         }
-      }
+      },
+      "description": "Currency type and monetary value. Schema for demonstrating pricing info."
     },
     "SalesRankList": {
       "type": "array",
@@ -7413,7 +7120,8 @@
           "format": "int32",
           "description": "The sales rank of the item within the item category."
         }
-      }
+      },
+      "description": "Sales rank information for the item, by category"
     },
     "PriceType": {
       "type": "object",
@@ -7437,7 +7145,8 @@
           "description": "The number of Amazon Points offered with the purchase of an item, and their monetary value.",
           "$ref": "#/definitions/Points"
         }
-      }
+      },
+      "description": "Schema for item's price information, including listing price, shipping price, and Amazon points."
     },
     "OffersList": {
       "type": "array",
@@ -7477,7 +7186,8 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/QuantityDiscountPriceType"
-          }
+          },
+          "description": "List of `QuantityDiscountPrice` that contains item's pricing information when buy in bulk."
         },
         "FulfillmentChannel": {
           "type": "string",
@@ -7495,7 +7205,8 @@
           "type": "string",
           "description": "The seller stock keeping unit (SKU) of the item."
         }
-      }
+      },
+      "description": "Schema for an individual offer."
     },
     "OfferCustomerType": {
       "type": "string",
@@ -7512,7 +7223,8 @@
           "value": "B2B",
           "description": "B2B"
         }
-      ]
+      ],
+      "description": "Indicates whether the offer is a B2B or B2C offer"
     },
     "QuantityDiscountPriceType": {
       "type": "object",
@@ -7548,7 +7260,8 @@
           "value": "QUANTITY_DISCOUNT",
           "description": "Quantity Discount"
         }
-      ]
+      ],
+      "description": "Indicates the type of quantity discount this price applies to."
     },
     "Points": {
       "type": "object",
@@ -7562,7 +7275,8 @@
           "description": "The monetary value of the points.",
           "$ref": "#/definitions/MoneyType"
         }
-      }
+      },
+      "description": "The number of Amazon Points offered with the purchase of an item, and their monetary value."
     },
     "ConditionType": {
       "type": "string",
@@ -7683,25 +7397,29 @@
       "type": "array",
       "items": {
         "$ref": "#/definitions/OfferCountType"
-      }
+      },
+      "description": "A list that contains the total number of offers that are eligible for the Buy Box for the given conditions and fulfillment channels."
     },
     "BuyBoxPrices": {
       "type": "array",
       "items": {
         "$ref": "#/definitions/BuyBoxPriceType"
-      }
+      },
+      "description": "A list of the Buy Box prices."
     },
     "LowestPrices": {
       "type": "array",
       "items": {
         "$ref": "#/definitions/LowestPriceType"
-      }
+      },
+      "description": "A list of the lowest prices."
     },
     "NumberOfOffers": {
       "type": "array",
       "items": {
         "$ref": "#/definitions/OfferCountType"
-      }
+      },
+      "description": "A list that contains the total number of offers information for given conditions and fulfillment channels."
     },
     "OfferCountType": {
       "type": "object",
@@ -7785,7 +7503,8 @@
           "description": "The number of Amazon Points offered with the purchase of an item.",
           "$ref": "#/definitions/Points"
         }
-      }
+      },
+      "description": "Schema for an individual lowest price."
     },
     "BuyBoxPriceType": {
       "type": "object",
@@ -7833,14 +7552,16 @@
           "type": "string",
           "description": "The seller identifier for the offer."
         }
-      }
+      },
+      "description": "Schema for an individual buybox price."
     },
     "OfferDetailList": {
       "type": "array",
       "items": {
         "$ref": "#/definitions/OfferDetail"
       },
-      "maxItems": 20
+      "maxItems": 20,
+      "description": "A list of offer details. The list is the same length as the TotalOfferCount in the Summary or 20, whichever is less."
     },
     "OfferDetail": {
       "type": "object",
@@ -7888,7 +7609,8 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/QuantityDiscountPriceType"
-          }
+          },
+          "description": "List of `QuantityDiscountPrice` that contains item's pricing information when buy in bulk."
         },
         "Points": {
           "description": "The number of Amazon Points offered with the purchase of an item.",
@@ -7918,7 +7640,8 @@
           "type": "boolean",
           "description": "When true, the seller of the item is eligible to win the Buy Box."
         }
-      }
+      },
+      "description": "Schema for an individual offer. Object in `OfferDetailList`."
     },
     "PrimeInformationType": {
       "description": "Amazon Prime information.",
@@ -8098,11 +7821,11 @@
         },
         "message": {
           "type": "string",
-          "description": "A message that describes the error condition in a human-readable form."
+          "description": "A message that describes the error condition."
         },
         "details": {
           "type": "string",
-          "description": "Additional information that can help the caller understand or fix the issue."
+          "description": "Additional details that can help the caller understand or fix the issue."
         }
       },
       "description": "Error response returned when the request is unsuccessful."
