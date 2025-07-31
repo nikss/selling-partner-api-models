@@ -38,8 +38,7 @@
                 </configuration>
             </plugin>
         </plugins>
-        <sourceDirectory>src/main/java</sourceDirectory>
-        <testSourceDirectory>src/test/java</testSourceDirectory>
+        <sourceDirectory>src</sourceDirectory>
         <directory>target</directory>
         <finalName>${project.artifactId}-${project.version}</finalName>
     </build>
