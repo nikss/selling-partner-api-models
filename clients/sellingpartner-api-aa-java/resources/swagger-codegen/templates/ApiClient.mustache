@@ -16,6 +16,7 @@ import org.joda.time.format.DateTimeFormatter;
 {{#threetenbp}}
 import org.threeten.bp.LocalDate;
 import org.threeten.bp.OffsetDateTime;
+import org.threeten.bp.ZoneOffset;
 import org.threeten.bp.format.DateTimeFormatter;
 {{/threetenbp}}
 
@@ -1142,6 +1143,69 @@ public class ApiClient {
             throw new AssertionError(e);
         }
     }
+
+    {{#threeten}}
+    public static OffsetDateTime convert(java.time.OffsetDateTime offsetDateTime) {
+        if (Objects.isNull(offsetDateTime)) {
+            return null;
+        }
+        return OffsetDateTime.of(
+                offsetDateTime.getYear(),
+                offsetDateTime.getMonthValue(),
+                offsetDateTime.getDayOfMonth(),
+                offsetDateTime.getHour(),
+                offsetDateTime.getMinute(),
+                offsetDateTime.getSecond(),
+                offsetDateTime.getNano(),
+                ZoneOffset.ofTotalSeconds(offsetDateTime.getOffset().getTotalSeconds())
+        );
+    }
+
+    public static LocalDate convert(java.time.LocalDate localDate) {
+        if (Objects.isNull(localDate)) {
+            return null;
+        }
+        return LocalDate.of(
+                localDate.getYear(),
+                localDate.getMonthValue(),
+                localDate.getDayOfMonth()
+        );
+    }
+    public static java.time.OffsetDateTime convert(OffsetDateTime offsetDateTime) {
+        if (Objects.isNull(offsetDateTime)) {
+            return null;
+        }
+        return java.time.OffsetDateTime.of(
+                offsetDateTime.getYear(),
+                offsetDateTime.getMonthValue(),
+                offsetDateTime.getDayOfMonth(),
+                offsetDateTime.getHour(),
+                offsetDateTime.getMinute(),
+                offsetDateTime.getSecond(),
+                offsetDateTime.getNano(),
+                java.time.ZoneOffset.ofTotalSeconds(offsetDateTime.getOffset().getTotalSeconds())
+        );
+    }
+    public static java.time.LocalDate convert(LocalDate localDate) {
+        if (Objects.isNull(localDate)) {
+            return null;
+        }
+        return java.time.LocalDate.of(
+                localDate.getYear(),
+                localDate.getMonthValue(),
+                localDate.getDayOfMonth()
+        );
+    }
+    {{/threeten}}
+    {{^threeten}}
+    public static OffsetDateTime convert(OffsetDateTime offsetDateTime) {
+        return offsetDateTime;
+    }
+
+    public static LocalDate convert(LocalDate localDate) {
+        return localDate;
+    }
+    {{/threeten}}
 }
 
 class RateLimitInterceptor implements Interceptor {
